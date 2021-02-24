@@ -60,9 +60,17 @@ a:hover {
     font-weight: 600;
 }
 
+.header_mail{
+    display:flex;
+}
+
+.header_call{
+    display:flex;
+}
+
 .secondblock img{
     width: 19px;
-    padding-left: 16%;
+    padding-right: 10px;
 }
 
 .secondblock ul{
@@ -149,7 +157,7 @@ a:hover {
 
 .heading_title{
     display:flex;
-    padding-top: 5%;
+    padding-top: 3%;
     font-size: 200%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -160,11 +168,10 @@ a:hover {
 
 .heading_description{
     display: flex;
-    padding-left: 20%;
     font-family: 'Raleway', sans-serif;
     font-size: small;
     font-weight: 500;
-    width: 60%;
+    width: 100%;
     text-align:center;
     padding-bottom: 2%;
     justify-content: center;
@@ -173,7 +180,7 @@ a:hover {
 
 .table_content{
     display:flex;
-    padding-top: 5%;
+    padding-top: 1%;
 }
 
 
@@ -181,7 +188,7 @@ a:hover {
     display:flex;
     width: 30%;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .table_left button:hover {
@@ -223,10 +230,10 @@ a:hover {
     width: 100%;
     display:flex;
     justify-content: space-between;
-    align-items: space-between;
 }
 
 .bigimg{
+    width: 70%;
     padding-top: 3%;
     display: flex;
     justify-content: center;
@@ -269,7 +276,7 @@ a:hover {
 .images{
     display:flex;
     width: 50%;
-    padding-left: 10%;
+    padding-left: 102px;
     align-items: center;
 }
 
@@ -434,15 +441,9 @@ input[type="text"] {
     position:absolute;
     }
 
-.submit_btn{
-    width:48%;
-    display:flex;
-    justify-content: flex-end;
-    outline: none;
-}
 
 .submit{
-    height: 55px;
+    height: 56px;
     width: 180px;
     border-radius: 50px;
     display:flex;
@@ -453,7 +454,7 @@ input[type="text"] {
     color:white;
     font-style: 'Raleway', sans-serif;
     border: none;
-    left:26%;
+    left:11%;
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
@@ -502,38 +503,56 @@ input[type="text"] {
     to {bottom: 0; opacity: 0;}
   }
 
-@media only screen and (min-width: 1440px) {
+
+
+  @media (min-width: 768px) {
     .phone_with_hand{
     position:absolute;
+    width: 700px;
     bottom: 0px;
-    left:300px;
-}
-
+    left: 80px;
+    }
+  
     .display{
     position:absolute;
-    left: 762px;
-    bottom: 78px;
+    width: 320px;
+    left: 420px;
+    bottom: 53px;
+    }
+
+    .images{
+        padding-left: 50px;
+    }
+    .screen{
+        z-index:3;
+        position: absolute;
+        left: 80px;
+    }
+
+    .phone{
+        z-index: 2;
+        position: relative;
+    }
+
+    .phone-copy{
+        z-index:1;
+        right: 180px;
+        position: relative;
+        background-color:rgb(242, 249, 254);
+    }
+
+    .submit{
+        left: 19%;
+    }
+
+    input[type="text"]{
+        width:520px;
+    }
 }
 
-}
 
 
-@media only screen and (min-width: 2560px) {
-    .phone_with_hand{
-    position:absolute;
-    bottom: 0px;
-    left: 600px;
-}
-
-    .display{
-    position:absolute;
-    left: 1062px;
-    bottom: 78px;
-}
-}
-
-
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .phone_with_hand{
     position:absolute;
     width: 800px;
@@ -547,20 +566,116 @@ input[type="text"] {
     left: 490px;
     bottom: 66px;
 }
+    .screen{
+        z-index:3;
+        position: absolute;
+        left: 80px;
+    
+    }
+
+    .phone{
+        z-index: 2;
+        position: relative;
+    }
+
+    .phone-copy{
+        z-index:1;
+        right: 180px;
+        position: relative;
+        background-color:rgb(242, 249, 254);
+    }
+
+    .submit{
+        left: 22%;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+
+@media  (min-width: 1440px) {
+
+    .firstblock{
+        padding-right: 20%;
+    }
+
     .phone_with_hand{
     position:absolute;
-    width: 700px;
     bottom: 0px;
-    left: 80px;
-}
+    left:300px;
+    }
 
     .display{
-    position:absolute;
-    width: 320px;
-    left: 420px;
-    bottom: 53px;
+        position:absolute;
+        left: 690px;
+        bottom: 66px;
+    }
+
+    .screen{
+        z-index:3;
+        position: absolute;
+        left: 131px;
+    }
+
+    .images {
+        padding-left: 103px;
+    }
+
+    .phone{
+        z-index: 2;
+        position: relative;
+    }
+
+    .phone-copy{
+        z-index:1;
+        right: 140px;
+        position: relative;
+        background-color:rgb(242, 249, 254);
+    }
+
+    .submit{
+        left: 240px;
+    }
 }
+
+
+@media (min-width: 2560px) {
+    .phone_with_hand{
+    position:absolute;
+    bottom: 0px;
+    left: 600px;
+    }
+
+    .display{
+        position:absolute;
+        left: 990px;
+        bottom: 66px;   
+    }
+    .screen{
+        z-index:3;
+        position: absolute;
+        left: 284px;
+    }
+
+    .phone{
+        z-index: 2;
+        position: relative;
+    }
+
+    .phone-copy{
+        z-index:1;
+        right: 150px;
+        position: relative;
+        background-color:rgb(242, 249, 254);
+    }
+
+    .submit{
+        left: 11%;
+    }
+
+    .images{
+        padding-left: 255px;
+    }
+
+    .firstblock{
+        padding-right: 40%;
+    }
 }
